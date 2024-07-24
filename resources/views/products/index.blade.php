@@ -3,7 +3,7 @@
     Danh sách sản phẩm
 @endsection
 @section('content')
-
+          <a href="{{route('products.create')}}" class="btn btn-primary">Theem </a>
     <table class="table">
         <thead>
         <tr>
@@ -32,8 +32,8 @@
             </td>
 {{--            <td>{{$item->loadAllCategory->name}}</td>--}}
 {{--                <td>{{$item->catename}}</td>--}}
-            <td>{{$listCate[$item->category_id]}}</td>
-            <td>{{$item->status}}</td>
+                    <td>{{$listCate[$item->category_id]}}</td>
+                    <td>{{$item->status}}</td>
         </tr>
         @endforeach
         </tbody>
